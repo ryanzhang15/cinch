@@ -1,13 +1,13 @@
 # cinch
-Personal tool for connecting to a VPN and checking connection status (for Macs running Z shell).
+Personal tool for connecting to a VPN and checking connection status (for Macs running Z shell). May only work on MacOS Ventura.
 
-First, edit cinch.sh, changing the IP address to be pinged during a VPN status check (as indicated by the comment).
-Then, simply run cinch.sh on zsh (or include it in your zshrc file for it to run automatically on Terminal startup).
+First, edit cinchStatus.sh, changing the IP address to be pinged during a VPN status check (as indicated by the comment).
+Optionally, the shell files can be aliased to shorter commands in the ~/.zshrc file.
 
-Afterwards the following commands are available in the terminal:
+The following scripts are available:
 
-### vpn
-Toggles the first VPN in the list given from System Preferences.
+### cinchVpn.sh
+Toggles the first VPN in the list given from System Preferences. 
 
-### vpn
+### cinchStatus.sh
 Checks status of VPN by first checking if it is on from System Preferences, then checking if the specified IP address can be pinged.
